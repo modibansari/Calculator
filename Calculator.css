@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('https://t3.ftcdn.net/jpg/01/08/78/52/500_F_108785255_2dbzS8gKp2OAto2CWcUgNhFVQ741LWIE.jpg');
+  background-repeat: repeat ;
+}
+.calc {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background-color: white ;
+}
+.sign {
+  height: 135px;
+  width: 100%;
+  background-color: black;
+  outline: none;
+  border-radius: 6px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 55px;
+  color: white;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 75px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.show{
+    color: white;
+}
+.count {
+  color: red;
+}
+#opera {
+  background-color: lightgrey;
+}
+.operator {
+  color: white;
+}
+.buttons .operator{
+  background-color: red;
+}
